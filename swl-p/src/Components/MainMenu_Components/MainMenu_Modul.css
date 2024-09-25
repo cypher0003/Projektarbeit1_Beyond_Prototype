@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "ZEISS Frutiger Next UI W05", "Helvetica Neue", system-ui,
+    sans-serif;
+  src: url(assets.zeiss.com);
+}
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.Restrictions-Container {
+  font-family: "ZEISS Frutiger Next UI W05", "Helvetica Neue", system-ui,
+    sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.Restrictions-Container ul {
+  margin-left: 30px;
+}
+.Upload-Container {
+  border: 1px dashed black;
+  border-radius: 2px;
+  width: 50vw;
+}
+
+.Upload-Button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.Headline {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.Headline-Container {
+  left: 2vw;
+}
+.Manual-Activation-Container {
+  border: 1px dashed black;
+  border-radius: 2px;
+  width: 50vw;
+  position: relative;
+}
+.Request-Revocation-Container {
+  border: 1px dashed black;
+  border-radius: 2px;
+  width: 50vw;
+  position: relative;
+}
+.Items-Container {
+  padding-left: 30px;
+}
+
+.Content-Container {
+  right: 1vw;
+  width: 100vw;
+  margin-left: 10000px;
+  position: relative;
+}
+.Footer-Container {
+  margin-top: 100px;
+}
