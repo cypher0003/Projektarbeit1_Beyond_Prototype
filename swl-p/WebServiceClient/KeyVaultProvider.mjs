@@ -6,8 +6,8 @@ export class KeyVaultProvider {
   }
 
   async getKeyVaulSecret(secretName) {
-    if (secretName === "SWLServicesSubscriptionKey") {
-      return "123";
+    if (secretName === "SWLTestSecret") {
+      return "testVal";
     }
     return null;
   }

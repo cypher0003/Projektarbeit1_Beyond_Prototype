@@ -122,8 +122,6 @@ export class HttpClientProvider {
       headers.Authorization = `Bearer ${this.IDToken}`;
     }
 
-    // Token validation and manipulation
-
     if (this.IDToken && httpClientType !== EHttpClientType.Activation) {
       try {
         const decodedToken = await jwtVerify(this.IDToken, { complete: true });

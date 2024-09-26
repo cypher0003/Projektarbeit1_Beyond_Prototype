@@ -11,7 +11,6 @@ import { DOMParser } from "xmldom";
 export class RequestFileFactory {
   constructor(activationClient, locationPrefixValidator) {
     this.activationClient = activationClient;
-
     this.locationPrefixValidator = locationPrefixValidator;
   }
 

@@ -16,9 +16,9 @@ export class HttpResponseHelper {
   static async create(response) {
     const content = await response.text();
 
-    console.log("Response Content:", content); // Debugging
+    console.log("Response Content:", content);
 
-    console.log("Response Status:", response.status); // Debugging
+    console.log("Response Status:", response.status);
 
     let data = null;
 
@@ -69,7 +69,7 @@ export class HttpResponseHelper {
 
   static async deserializeContent(response, type = null) {
     try {
-      const json = await response.json(); // Verwende .json() anstelle von .text()
+      const json = await response.json();
 
       if (type && json[type]) {
         return json[type];

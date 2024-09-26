@@ -24,17 +24,17 @@ export class Activation extends BaseModel {
 
     this.timeZoneId = null;
 
-    this.activationDate = new Date(); // Use Date type in JavaScript
+    this.activationDate = new Date();
 
     this.sendNotification = false;
 
     this.soldToEmail = null;
 
-    this.state = ActivationState.ACTIVATED; // Default state, update as necessary
+    this.state = ActivationState.ACTIVATED;
 
-    this.creationDate = new Date(); // Use Date type in JavaScript
+    this.creationDate = new Date();
 
-    this.lastModifiedDate = new Date(); // Use Date type in JavaScript
+    this.lastModifiedDate = new Date();
 
     this.licenseKey = null;
 
@@ -62,7 +62,7 @@ export class Activation extends BaseModel {
 
     this.fxProperties = new ActivationPropertiesFX();
 
-    this.expirationDate = new Date(); // Use Date type in JavaScript
+    this.expirationDate = new Date();
 
     this.licenseFileExtension = null;
 

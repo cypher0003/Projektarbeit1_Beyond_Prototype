@@ -27,19 +27,16 @@ const cache = {};
 
 const configuration = {
   Endpoint: {
-    baseUrlProduct: "https://czag01r20wa-productservice-test.azurewebsites.net",
-    baseUrlEntitlement:
-      "https://czag01r20wa-entitlementservice-test.azurewebsites.net",
-    baseUrlUser: "https://czag01r20wa-userservice-test.azurewebsites.net",
-    baseUrlOrganization:
-      "https://czag01r20wa-organizationservice-test.azurewebsites.net",
-    baseUrlAppSetting:
-      "https://czag01r20wa-appsettingservice-test.azurewebsites.net",
-    baseUrlReport: "https://czag01r20wa-reportservice-test.azurewebsites.net",
-    baseUrlDevice: "https://czag01r20wa-deviceservice-test.azurewebsites.net",
-    baseUrlLicense: "https://czag01r20wa-licenseservice-test.azurewebsites.net",
-    baseUrlOrder: "https://czag01r20wa-orderservice-test.azurewebsites.net",
-    baseUrlFunctionApps: "https://czswlservices-test.azurewebsites.net",
+    baseUrlProduct: "https://test-Url",
+    baseUrlEntitlement: "https://test-Url",
+    baseUrlUser: "https://test-Url",
+    baseUrlOrganization: "https://test-Url",
+    baseUrlAppSetting: "https://test-Url",
+    baseUrlReport: "https://test-Url",
+    baseUrlDevice: "https://test-Url",
+    baseUrlLicense: "https://test-Url",
+    baseUrlOrder: "https://test-Url",
+    baseUrlFunctionApps: "https://test-Url",
   },
 };
 

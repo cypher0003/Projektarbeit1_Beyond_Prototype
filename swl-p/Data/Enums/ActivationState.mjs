@@ -15,5 +15,3 @@ export const ActivationState = {
 
   EXPIRED: "EXPIRED",
 };
-
-// Optional: Export the enum if you're using modules

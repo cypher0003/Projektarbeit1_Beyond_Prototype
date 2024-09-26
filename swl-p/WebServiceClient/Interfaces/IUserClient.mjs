@@ -224,5 +224,3 @@ export class UserClient {
     // Implementation here
   }
 }
-
-// You would need to define the classes/interfaces for `User`, `Role`, `LastUsedItem`, `SearchObjectUser`, and `PartialList` that are used in this interface.

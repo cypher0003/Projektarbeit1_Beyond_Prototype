@@ -1,6 +1,6 @@
 export class RequestFile {
   constructor(fileContent, type, activationClient, locationPrefixValidator) {
-    this._fileContent = fileContent; // Verwende private Variable zum Initialisieren
+    this._fileContent = fileContent;
 
     this._type = type;
 
@@ -14,7 +14,7 @@ export class RequestFile {
   }
 
   set fileContent(value) {
-    this._fileContent = value; // Setze die private Variable direkt
+    this._fileContent = value;
   }
 
   get type() {
@@ -22,7 +22,7 @@ export class RequestFile {
   }
 
   set type(value) {
-    this._type = value; // Falls erforderlich, fügen Sie dies für den Typ hinzu
+    this._type = value;
   }
 
   async validate() {

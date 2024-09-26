@@ -118,8 +118,6 @@ export class SignedMessageFile extends RequestFile {
 
   async process() {
     if (this.type === RequestFileType.SignedUpgrade) {
-      // For upgrade validation the upgrade request will be used and the data type is changed to 'UpgradeRequest'
-
       this._signedMessageRequest.dataType = "UpgradeRequest";
     }
 

@@ -15,8 +15,6 @@ class RefProductVariant extends BaseModel {
     }
   }
 
-  // Getter und Setter für Name
-
   get name() {
     return this._name;
   }
@@ -25,8 +23,6 @@ class RefProductVariant extends BaseModel {
     this._name = value;
   }
 
-  // Getter und Setter für Version
-
   get version() {
     return this._version;
   }
@@ -34,8 +30,6 @@ class RefProductVariant extends BaseModel {
   set version(value) {
     this._version = value;
   }
-
-  // Getter und Setter für MaterialNumber
 
   get materialNumber() {
     return this._materialNumber;
@@ -55,8 +49,6 @@ class RefProductVariant extends BaseModel {
     }
   }
 
-  // Getter und Setter für FormattedMaterialNumber
-
   get formattedMaterialNumber() {
     return FormatHelper.getFormattedMaterialnumber(this._materialNumber);
   }
@@ -66,8 +58,6 @@ class RefProductVariant extends BaseModel {
       this.materialNumber = FormatHelper.getUnFormattedMaterialnumber(value);
     }
   }
-
-  // Clone Methode
 
   clone() {
     return new RefProductVariant(this.name, this.version, this.materialNumber);

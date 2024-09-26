@@ -143,13 +143,13 @@ export class ProductVariant {
 
     clone.useNamedUsers = this.useNamedUsers;
 
-    clone.namedUsersConcurrencyCriteria = this.namedUsersConcurrencyCriteria; // Annahme: Diese Klasse hat keine Methode .clone()
+    clone.namedUsersConcurrencyCriteria = this.namedUsersConcurrencyCriteria;
 
     clone.limitNamedUserAssignment = this.limitNamedUserAssignment;
 
     clone.defaultDuration = this.defaultDuration;
 
-    clone.emailBehaviour = this.emailBehaviour; // Annahme: Diese Klasse hat keine Methode .clone()
+    clone.emailBehaviour = this.emailBehaviour;
 
     clone.upgradeRules = this.upgradeRules.map((rule) => rule.clone());
 

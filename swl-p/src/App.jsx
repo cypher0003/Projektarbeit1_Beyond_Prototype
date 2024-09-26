@@ -13,19 +13,19 @@ const App = () => {
   const handleOkClick = () => {
     console.log("OK clicked");
 
-    setShowDialog(false); // Dialog schließen
+    setShowDialog(false);
   };
 
   const handleDiscardClick = () => {
     console.log("Discard clicked");
 
-    setShowDialog(false); // Dialog schließen
+    setShowDialog(false);
   };
 
   const handleCloseClick = () => {
     console.log("Close clicked");
 
-    setShowDialog(false); // Dialog schließen
+    setShowDialog(false);
   };
 
   return (

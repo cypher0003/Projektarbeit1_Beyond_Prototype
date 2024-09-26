@@ -124,11 +124,11 @@ describe("User class", () => {
 
     expect(clonedUser).to.deep.equal(originalUser);
 
-    expect(clonedUser).to.not.equal(originalUser); 
+    expect(clonedUser).to.not.equal(originalUser);
 
     expect(clonedUser.roles[0]).to.deep.equal(originalUser.roles[0]);
 
-    expect(clonedUser.roles[0]).to.not.equal(originalUser.roles[0]); 
+    expect(clonedUser.roles[0]).to.not.equal(originalUser.roles[0]);
 
     expect(clonedUser.modules[0]).to.deep.equal(originalUser.modules[0]);
 
@@ -144,7 +144,6 @@ describe("User class", () => {
 
     expect(clonedUser.firstName).to.equal("John");
   });
-
 
   it("should correctly set and get properties", () => {
     const roleData = {

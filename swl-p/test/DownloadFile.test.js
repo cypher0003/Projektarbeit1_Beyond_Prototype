@@ -44,7 +44,7 @@ describe("DownloadFile", () => {
 
     expect(downloadFile.fileContent).to.equal("repairResponseContent");
 
-    expect(downloadFile.fileName).to.match(/RepairResponse_\d{8}_\d{6}\.xml/); // Überprüft, ob der Dateiname das erwartete Format hat
+    expect(downloadFile.fileName).to.match(/RepairResponse_\d{8}_\d{6}\.xml/);
 
     expect(downloadFile.isBinary).to.be.false;
   });
@@ -58,7 +58,7 @@ describe("DownloadFile", () => {
 
     expect(downloadFile.fileContent).to.equal("returnResponseContent");
 
-    expect(downloadFile.fileName).to.match(/ReturnResponse_\d{8}_\d{6}\.xml/); // Überprüft, ob der Dateiname das erwartete Format hat
+    expect(downloadFile.fileName).to.match(/ReturnResponse_\d{8}_\d{6}\.xml/);
 
     expect(downloadFile.isBinary).to.be.false;
   });

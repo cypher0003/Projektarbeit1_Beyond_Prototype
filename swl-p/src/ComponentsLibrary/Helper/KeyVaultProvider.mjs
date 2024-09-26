@@ -8,7 +8,7 @@ class KeyVaultProvider {
     this.configuration = configuration;
     this.logger = logger;
 
-    this.baseUrl = configuration.get("AzureKeyVault:BaseUrl");
+    this.baseUrl = "testUrl";
 
     this.secretClient = new SecretClient(
       this.baseUrl,

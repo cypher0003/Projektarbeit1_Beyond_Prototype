@@ -1,5 +1,3 @@
-// LicenseComponent.jsx
-
 import React, { useState } from "react";
 
 const LicenseComponent = () => {

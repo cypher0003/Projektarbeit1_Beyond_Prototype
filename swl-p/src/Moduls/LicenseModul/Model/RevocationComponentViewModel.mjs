@@ -47,13 +47,9 @@ export class RevocationComponentViewModel {
         2
       );
 
-      const fileName = `PermissionTicket_${this.activationId}.json`;
-
-      // Verwende FileHelper, um die Datei zu speichern
+      const fileName = `PermissionTicket${this.activationId}.json`;
 
       await FileHelper.saveFile(fileName, permissionTicketContent);
-
-      // Setze die ActivationId zurück, nachdem das Ticket erstellt wurde
 
       this.activationId = "";
     } catch (ex) {

@@ -37,8 +37,6 @@ describe("ActivationClient", () => {
   let protectedStorage;
 
   beforeEach(() => {
-
-
     logger = {
       log: sinon.spy(),
 
@@ -46,7 +44,6 @@ describe("ActivationClient", () => {
     };
 
     protectedStorage = new ProtectedSessionStorage();
-
 
     cache = {
       hasObjectId: sinon.stub(),
@@ -62,15 +59,13 @@ describe("ActivationClient", () => {
       new ProtectedSessionStorageRepositoryHelper(protectedStorage)
     );
 
-
     activationClient = new ActivationClient(httpClientProvider, logger);
-
 
     fetchMock = sinon.stub(globalThis, "fetch");
   });
 
   afterEach(() => {
-    sinon.restore(); 
+    sinon.restore();
   });
 
   it("should perform an activation", async () => {
@@ -118,7 +113,7 @@ describe("ActivationClient", () => {
       text: async () =>
         JSON.stringify({
           data: {
-            activationId: "d8882f64-3217-42a1-8441-50ea50c87a57",
+            activationId: "testID",
           },
 
           error: null,
@@ -132,7 +127,7 @@ describe("ActivationClient", () => {
     const response = await activationClient.activate(activationRequest);
 
     expect(response).to.eql({
-      activationId: "d8882f64-3217-42a1-8441-50ea50c87a57",
+      activationId: "testID",
     });
 
     expect(fetchMock.calledOnce).to.be.true;
@@ -170,8 +165,6 @@ describe("ActivationClient", () => {
   });
 
   it("should perform an activation with complex data", async () => {
-    // DublinLegacyProperties instanziieren
-
     const dublinLegacyProperties = new ActivationPropertiesDublinLegacy();
 
     dublinLegacyProperties.nodeId = "testNodeId";
@@ -180,15 +173,11 @@ describe("ActivationClient", () => {
 
     dublinLegacyProperties.serialNumber = "testSerialNumber";
 
-    // FnpCertificateProperties instanziieren
-
     const fnpCertificateProperties = new ActivationPropertiesFNPCertificate();
 
     fnpCertificateProperties.notice = "testNotice";
 
     fnpCertificateProperties.vendor = "testVendor";
-
-    // VisumaxProperties instanziieren
 
     const visumaxProperties = new ActivationPropertiesVisumax();
 
@@ -196,15 +185,11 @@ describe("ActivationClient", () => {
 
     visumaxProperties.therapyNumber = 1;
 
-    // FxProperties instanziieren
-
     const fxProperties = new ActivationPropertiesFX();
 
     fxProperties.vH_AUTH_PASSWORD = "testPassword";
 
     fxProperties.vH_AUTH_USER = "testUser";
-
-    // Erstelle die Activation-Instanz und fülle sie mit den Testdaten
 
     const activation = new Activation();
 
@@ -239,8 +224,6 @@ describe("ActivationClient", () => {
             groupActivationId: "testGroupActivationId",
 
             activationQuantity: 1,
-
-            // Setze hier weitere Felder entsprechend den Erwartungen des Tests...
           },
 
           error: null,
@@ -259,8 +242,6 @@ describe("ActivationClient", () => {
       groupActivationId: "testGroupActivationId",
 
       activationQuantity: 1,
-
-      // Überprüfe auch andere Felder nach Bedarf...
     });
 
     expect(fetchMock.calledOnce).to.be.true;

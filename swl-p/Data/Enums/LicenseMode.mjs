@@ -1,7 +1,7 @@
 const LicenseMode = Object.freeze({
   Undefined: 0,
 
-  Thales_Standalone: "Thales_Standalone", // Floating
+  Thales_Standalone: "Thales_Standalone",
 
   Thales_Network: "Thales_Network",
 
@@ -19,8 +19,7 @@ const LicenseMode = Object.freeze({
 
   DublinLegacy: "DublinLegacy",
 
-  Visumax: "Visumax", // Upgrade
-
+  Visumax: "Visumax",
   Upgrade: "Upgrade",
 
   Thales_CloudLM: "Thales_CloudLM",

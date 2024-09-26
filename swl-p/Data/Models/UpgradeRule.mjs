@@ -1,6 +1,6 @@
 export class UpgradeRule {
   constructor() {
-    this.compareOperator = "AND"; // Standardmäßig 'AND'
+    this.compareOperator = "AND";
 
     this.validationList = [];
 

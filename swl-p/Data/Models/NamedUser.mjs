@@ -1,5 +1,3 @@
-// NamedUser.js
-
 export class NamedUser {
   constructor(name = "", lastModifiedDate = null) {
     this.name = name;
@@ -11,7 +9,3 @@ export class NamedUser {
     return Object.assign(Object.create(Object.getPrototypeOf(this)), this);
   }
 }
-
-
-
-

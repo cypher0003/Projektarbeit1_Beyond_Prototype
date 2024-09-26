@@ -40,7 +40,7 @@ export class SearchObjectEntitlement extends SearchObjectBase {
 
     this.ratePlanName = "";
 
-    this.ratePlanId = ""; // Deprecated, but still included for compatibility
+    this.ratePlanId = "";
 
     this.licenseRecipientFirstName = "";
 
